@@ -1,0 +1,41 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Synced Pattern Missing Context",
+    "author": "Chris Zarate"
+  },
+  "features": {
+    "networking": true
+  },
+  "landingPage": "/wp-admin/post.php?post=9&action=edit",
+  "login": true,
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "steps": [
+    {
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/custom-block-binding.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/chriszarate/synced-pattern-missing-context/main/custom-block-binding/custom-block-binding.php"
+			}
+		},
+    {
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/provide-missing-context-hack.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/chriszarate/synced-pattern-missing-context/main/provide-missing-context-hack/provide-missing-context-hack.php"
+			}
+		},
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+				"url": "https://raw.githubusercontent.com/chriszarate/synced-pattern-missing-context/main/context.wxr"
+      }
+    }
+  ]
+}
