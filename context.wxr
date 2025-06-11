@@ -281,7 +281,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 		<guid isPermaLink="false">http://localhost:8888/?p=6</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:block {"ref":9} /--></div>
+<div class="wp-block-group"><!-- wp:block {"ref":10} /--></div>
 <!-- /wp:group -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>6</wp:post_id>

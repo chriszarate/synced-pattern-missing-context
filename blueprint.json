@@ -7,7 +7,7 @@
   "features": {
     "networking": true
   },
-  "landingPage": "/wp-admin/post.php?post=9&action=edit",
+  "landingPage": "/wp-admin/post.php?post=8&action=edit",
   "login": true,
   "preferredVersions": {
     "php": "8.2",
@@ -30,6 +30,10 @@
 				"url": "https://raw.githubusercontent.com/chriszarate/synced-pattern-missing-context/main/provide-missing-context-hack/provide-missing-context-hack.php"
 			}
 		},
+    {
+      "step": "activatePlugin",
+      "pluginPath": "/wordpress/wp-content/plugins/custom-block-binding.php"
+   },
     {
       "step": "importWxr",
       "file": {
